@@ -57,7 +57,18 @@ def simulate_data(
             multi_rho.append(rho)
 
         # simulate the coalescent tree with msprime
-        tree_sequence = msprime.simulate(
+        mutation_sequence = msprime.sim_ancestry(
+            discrete_genome=False,
+            samples=num_sample,
+            population_size=0.25,
+            recombination_rate=rho,
+            random_seed=None,
+            ploidy=1,
+            sequence_length=1
+        )
+        mutation_sequence = msprime.sim_mutations(mutation_sequence,discrete_genome=False ,rate=theta,random_seed=None,)
+
+        """ msprime.simulate(
             sample_size=num_sample,
             Ne=0.25,
             length=1,
@@ -65,19 +76,20 @@ def simulate_data(
             mutation_rate=theta,
             random_seed=None,
         )
+        """
         if save_ts:
-            multi_ts.append(tree_sequence)
+            multi_ts.append(mutation_sequence)
 
         # get mean total tree length and save as entry of multi_total_length
         mean_tot_branch_length = 0
-        for tree in tree_sequence.trees():
+        for tree in mutation_sequence.trees():
             mean_tot_branch_length += tree.total_branch_length * (
                 tree.interval[1] - tree.interval[0]
             )
         multi_total_length.append(mean_tot_branch_length)
 
         # get genotype matrix
-        G = tree_sequence.genotype_matrix()
+        G = mutation_sequence.genotype_matrix()
         # potentially save the genotype matrix:
         if save_genotype_matrix:
             multi_G.append(G)

@@ -7,8 +7,8 @@ Created on Tue Dec  1 15:35:13 2020
 
 @author: Klara Burger, Franz Baumdicker
 """
-import sys_path
-from source.base.simulate import simulate_data
+import Source.sys_path
+from Source.simulate import simulate_data
 
 
 # determine characteristics for simulation

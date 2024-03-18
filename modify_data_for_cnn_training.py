@@ -14,7 +14,7 @@ def sort_min_diff(amat):
     smallest = numpy.argmin(v[0].sum(axis=1))
     return amat[v[1][smallest]]
 
-my_input_test = np.load("sim_n_40_rep_100000_rho_0_theta_random-100.npz", allow_pickle=True)
+my_input_test = np.load('Data/Simulations/sim_n_40_rep_10000_rho_0_theta_random-100.npz', allow_pickle=True)
 G_test = []
 theta = []
 my_multi_theta = []
@@ -26,7 +26,7 @@ my_G_test = []
 for theta in zip(my_input_test["multi_theta"]):
     my_multi_theta.append(theta)
 
-for i in range(0,100000):
+for i in range(0,10000):
     multi_theta.append(my_multi_theta[i][0])
 #print(multi_theta)
 print("len theta:", len(multi_theta))
@@ -63,16 +63,16 @@ for i in range(0,len(multi_theta)):
 G_filled = numpy.stack([my_zwischen_G[l] for l in range(0, len(multi_theta))])
 print(G_filled.shape)
 
-multi_G_test = G_filled[:20000]
-multi_G_train = G_filled[20000:]
-multi_theta_test = multi_theta[:20000]
-multi_theta_train = multi_theta[20000:]
+multi_G_test = G_filled[:2000]
+multi_G_train = G_filled[2000:]
+multi_theta_test = multi_theta[:2000]
+multi_theta_train = multi_theta[2000:]
 
 print(multi_G_test.shape)
 print(multi_G_train.shape)
 print(len(multi_theta_test))
 print(len(multi_theta_train))
 
-filename1 = ("old_theta_sim_no_seed_rep_100000")
+filename1 = ("rho_0_theta_random_sim_no_seed_rep_10000")
 
 numpy.savez_compressed(filename1, xtest=multi_G_test, xtrain=multi_G_train, ytest=multi_theta_test, ytrain=multi_theta_train)

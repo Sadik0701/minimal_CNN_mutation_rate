@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="820a7894-4934-4b27-b553-066b69fdba85" name="Changes" comment="" />
+    <list default="true" id="820a7894-4934-4b27-b553-066b69fdba85" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Data/Simulations/sim_n_40_rep_100000_rho_0_theta_random-100.npz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Simulations/sim_n_40_rep_100000_rho_1000_theta_random-100.npz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Simulations/sim_n_40_rep_100000_rho_35_theta_random-100.npz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/sys_path.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation_scripts/sim_test_data_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation_scripts/sim_test_data_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation_scripts/sim_train_data_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation_scripts/sim_train_data_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/simulate.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source/simulate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Train_Flagel/train_flagel_rho_0.py" beforeDir="false" afterPath="$PROJECT_DIR$/Train_Flagel/train_flagel_rho_0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modify_data_for_cnn_training.py" beforeDir="false" afterPath="$PROJECT_DIR$/modify_data_for_cnn_training.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,23 +65,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.modify_data_for_flagel_CNN.executor": "Run",
-    "Python.train_flagel_rho_0.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/sadik/PycharmProjects/minimal_CNN_mutation_rate/Source",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.CommitDialog",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.modify_data_for_cnn_training.executor&quot;: &quot;Run&quot;,
+    &quot;Python.modify_data_for_flagel_CNN.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sim_train_data_example.executor&quot;: &quot;Run&quot;,
+    &quot;Python.simulate.executor&quot;: &quot;Run&quot;,
+    &quot;Python.train_flagel_rho_0.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sadik/PycharmProjects/minimal_CNN_mutation_rate/Source&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Source" />
@@ -101,7 +116,12 @@
       <workItem from="1709893196111" duration="4932000" />
       <workItem from="1710105425055" duration="774000" />
       <workItem from="1710325593609" duration="8131000" />
-      <workItem from="1710336794079" duration="373000" />
+      <workItem from="1710336794079" duration="7190000" />
+      <workItem from="1710416756624" duration="731000" />
+      <workItem from="1710448934758" duration="104000" />
+      <workItem from="1710495460829" duration="708000" />
+      <workItem from="1710497262310" duration="1243000" />
+      <workItem from="1710787265580" duration="415000" />
     </task>
     <servers />
   </component>
@@ -132,7 +152,10 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/minimal_CNN_mutation_rate$sim_train_data_example.coverage" NAME="sim_train_data_example Coverage Results" MODIFIED="1710497275990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Simulation_scripts" />
+    <SUITE FILE_PATH="coverage/minimal_CNN_mutation_rate$simulate.coverage" NAME="simulate Coverage Results" MODIFIED="1710340985386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Source" />
     <SUITE FILE_PATH="coverage/minimal_CNN_mutation_rate$modify_data_for_flagel_CNN.coverage" NAME="modify_data_for_flagel_CNN Coverage Results" MODIFIED="1709894819530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/minimal_CNN_mutation_rate$train_flagel_rho_0.coverage" NAME="train_flagel_rho_0 Coverage Results" MODIFIED="1710105596680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/minimal_CNN_mutation_rate$modify_data_for_cnn_training.coverage" NAME="modify_data_for_cnn_training Coverage Results" MODIFIED="1710497438064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/minimal_CNN_mutation_rate$train_flagel_rho_0.coverage" NAME="train_flagel_rho_0 Coverage Results" MODIFIED="1710787320008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Train_Flagel" />
   </component>
 </project>
